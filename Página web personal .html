@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+
+<body background="imagenes/fonodo 1.gif">
+
+    <!-- Barra de navegación principal con aria-label para accesibilidad -->
+    <nav class="navbar" aria-label="Menú principal">
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#intereses">Mis Intereses</a></li>
+            <li><a href="#habilidades">Mis Habilidades</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+        <div class="nav-user">
+            <span class="user-icon">👤</span>
+            <a href="#">Entrar</a>
+            <button class="start-btn">Empezar</button>
+        </div>
+    </nav>
+
+    <!-- Encabezado con nombre y foto de perfil -->
+    <header id="inicio" style="text-align: center;">
+        <h1>Benjamin Rustrian</h1>
+        <img src="icono/FT.jpeg" alt="Foto de perfil de Benjamin Rustrian" width="200">
+    </header>
+
+    <!-- Botón de música con clase separada -->
+    <button class="boton-musica" aria-label="Reproducir música de fondo" onclick="document.getElementById('musica').play()">🎵 Reproducir Música</button>
+    <audio id="musica" src="Musica/Windmill Isle - Day.mp3" loop></audio>
+
+    <!-- Sección de intereses personales -->
+    <section id="intereses" style="text-align: center;">
+        <h2>Mis Intereses</h2>
+        <ul>
+            <li>Leer libros</li>
+            <li>Ver películas</li>
+            <li>Cocinar</li>
+            <li>Jugar videojuegos</li>
+            <li>Poder entrenar</li>
+            <li>Poder seguir entrenando BOX</li>
+        </ul>
+    </section>
+
+    <!-- Sección de habilidades personales -->
+    <section id="habilidades" style="text-align: center;">
+        <h2>Mis Habilidades</h2>
+        <ul>
+            <li>Hablar en público</li>
+            <li>Trabajo en equipo</li>
+            <li>Ser sociable</li>
+            <li>Creatividad</li>
+            <li>Tener la facilidad de hablar con la gente</li>
+            <li>Ser bueno para la cocina</li>
+            <li>La tecnología</li>
+        </ul>
+    </section>
+
+    <!-- Datos de mí -->
+    <section id="habilidades" style="text-align: center;">
+        <h2>Unos datos de mí</h2>
+        <ul>
+            <li>Me gustan las películas de Marvel</li>
+            <li>Me gusta bromear</li>
+            <li>Las cosas dulces</li>
+            <li>No suelo enojarme con facilidad</li>
+            <li>Me gustan las cosas extravagantes</li>
+            <li>Me encanta la pizza</li>
+            <li>Actualmente el boxeo, pero no competitivo</li>
+            <li>Las pelis de terror</li>
+        </ul>
+    </section>
+
+    <!-- Serie -->
+    <section id="habilidades" style="text-align: center;">
+        <h2>MI Serie Favorita</h2>
+        <ul>
+            <li>
+                The Punisher (2017) es una serie de acción y crimen de Marvel, centrada en Frank Castle, un exmarine que busca venganza tras el asesinato de su 
+                familia. Después de descubrir una conspiración militar más grande, Frank adopta el nombre de "The Punisher" y se enfrenta a criminales, soldados 
+                corruptos y agentes del gobierno.
+            </li>
+            <br>
+            <li>
+                A lo largo de la serie, lucha por justicia usando tácticas violentas, mientras lidia con su trauma, su pasado militar y su deseo de venganza.
+            </li>
+        </ul>
+        <br>
+        <img src="imagenes/punisher.gif" alt="">
+    </section>
+
+    <!-- Mi juego favorito -->
+    <section id="habilidades" style="text-align: center;">
+        <h2>MI Juego Favorito</h2>
+        <h2>Dragon Ball FighterZ</h2>
+        <ul>
+            <li>
+                Dragon Ball FighterZ es un juego de peleas basado en el anime Dragon Ball. En el modo historia, aparece un nuevo
+                personaje: Androide 21, una científica poderosa que amenaza al mundo. Los guerreros Z, villanos y otros personajes
+                se ven afectados por una misteriosa energía que debilita sus poderes. Para detenerla, deben formar equipos y enfrentarse
+                entre ellos, mientras descubren quién está detrás del problema.
+            </li>
+            <br>
+            <li>
+                El juego mezcla acción rápida, combates por equipos (3 contra 3), y escenas al estilo anime. Además, permite jugar en
+                línea contra otros jugadores o en modo historia para un jugador.
+            </li>
+        </ul>
+        <br>
+        <img src="imagenes/DBZ.gif" alt="">
+    </section>
+
+    <!-- Video favorito -->
+    <section id="video-favorito" style="text-align: center;">
+        <h2>Mi Video Favorito</h2>
+        <p>Este es uno de mis videos favoritos, es una canción:</p>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/npNh5A1Z4-c?si=e4_KijHu7A9e5QLl" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2 style="text-align: center;">Formulario de Contacto</h2>
+        <form class="form-flex">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+            <!-- Botón Enviar dentro del formulario -->
+            <button type="submit" class="boton-flex">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <!-- Imagen decorativa -->
+    <center>
+        <img src="imagenes/Mario kart.gif" alt="Animación de Mario Kart jugando" width="600" >
+  </center>
+
+
+
+    <!-- Pie de página con información personal y redes sociales -->
+    <footer class="footer">
+        <p><strong>Nombre:</strong> Benjamin Rustrian</p>
+        <p><strong>Carrera:</strong> Perito en Desarrollo de Contenido Digital y Software</p>
+        <p><strong>Fecha:</strong> Julio 2025</p>
+        <p>© 2025 Todos los derechos reservados para HR Benji </p>
+
+        <img src="imagenes/mario-super-mario.gif" alt="Logo personal" class="footer-logo">
+
+        <div class="social-icons">
+            <a href="#"><img src="icono/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icono/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icono/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="icono/TikTok.png" alt="TikTok"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
